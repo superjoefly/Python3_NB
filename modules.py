@@ -35,11 +35,7 @@ def main():
 
     ############################
 
-    # # Web Crawler Example:
-    # # Define url:
-    # url = 'https://joefly.site/pages/projects/'
-    # # Webcrawl the url:
-    # web_crawl(url)
+
 
 
     ############################
@@ -78,48 +74,6 @@ def main():
 
     #############################
         # FUNCTIONS
-
-
-
-
-
-
-# def web_crawl(url):
-#
-#     # Get the source code:
-#     source_code = requests.get(url)
-#     # Convert to plain text:
-#     data = source_code.text
-#     # Convert to BeautifulSoup object:
-#     my_soup = BeautifulSoup(data, 'lxml')
-#
-#     # # Loop to find all icons with class of 'fa':
-#     # for item in my_soup.findAll('i', {'class': 'fa'}):
-#     #     title = item.decode_contents()
-#     #     print(title)
-#
-#     # Loop to get all urls:
-#     for item in my_soup.findAll('a', {'target':'_blank'}):
-#         # Get the href value:
-#         href = url + item.get('href')
-#         # # Get the text for the link:
-#         # title = item.string
-#
-#         # print(href)
-#         # print(title)
-#
-#         #Get each item's data:
-#         get_single_item_data(href)
-#
-#
-#
-# def get_single_item_data(item_url):
-#     source_code = requests.get(item_url)
-#     data = source_code.text
-#     my_soup = BeautifulSoup(data, 'lxml')
-#     for item in my_soup.findAll('h1'):
-#         title = item.string
-#         print(title)
 
 
 
