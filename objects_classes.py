@@ -55,12 +55,13 @@ def main():
 
     # Create Animal Class:
     class Animal:
-        """This the the animal class"""
-        def __init__(self, name, type):
+        """This the the Animal Class"""
+        def __init__(self, name, type_of):
             self.name = name
-            self.type = type
+            self.type_of = type_of
 
         def say_hello(self, hello):
+            """Say Hello Method of Animal Class"""
             print(hello)
 
 
@@ -93,6 +94,7 @@ def main():
 
         # Default methods of class:
         def make_noise(self):
+            """Make Noise Method of Beast Class"""
             print(self.noise)
 
         # Instantiation of class (instance variables)
@@ -141,17 +143,22 @@ def main():
             self.last_name = last_name
 
         def display_first_name(self):
+            """Display First Name method of Parent Class"""
             print(self.first_name)
 
         def display_last_name(self):
+            """Display Last Name method of Parent Class"""
             print(self.last_name)
 
     class Child(Parent):
+        """Child Class"""
         def say_hello(self):
+            """Say Hello Method of Child Class"""
             print("Hello There!")
 
         # Override last_name method of parent class:
         def display_last_name(self):
+            """Display Last Name method of Child Class"""
             print("Whatever!!!")
 
 
@@ -175,25 +182,33 @@ def main():
     ########################
 
     class Mario():
+        """Mario Class"""
         def __init__(self, life):
             self.life = life
 
         def move(self):
+            """Move Method"""
             print("Mario moves around...")
 
         def gains_life(self):
+            """Gains Life Method"""
             self.life += 3
 
     class Shroom():
+        """Shroom Class"""
         def eat_shroom(self):
+            """Eat Mushroom Method"""
             print("Mario get's bigger!")
 
     class FastMario():
+        """Fast Mario Class"""
         def super_speed(self):
+            """Super Speed Method"""
             print("Mario runs at super speed!!!")
 
     # Inherits from multiple classes:
     class SuperMario(Mario, Shroom, FastMario):
+        """Super Mario Class"""
         pass
 
     # Creat object:
