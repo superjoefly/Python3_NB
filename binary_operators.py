@@ -2,7 +2,7 @@
 
 # Define main:
 def main():
-    """Binary Operator Examples"""
+    """The main function"""
 
     # Binary Number Explanation:
     # Each bit represents a number: 32, 16, 8, 4, 2, 1
@@ -27,6 +27,8 @@ def main():
     x = 240     # 11110000
     y = x >> 2  # 00111100
     print(y)    # 60
+
+
 
     # Binary LEFT SHIFT Operator (shift two places to left)
     x = 240     # 11110000
