@@ -1,3 +1,5 @@
+"""Image Manipulation Examples"""
+
 # Import Modules:
 from PIL import Image
 from PIL import ImageFilter
