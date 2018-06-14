@@ -1,10 +1,10 @@
-"""Perform Calculation on Dictionary Values"""
+"""Calculation using Dictionary Values"""
 
-
+# Define main:
 def main():
-    """Performs Calculation on Dictionary Values"""
+    """The main function"""
 
-    # Assign stocks dictionary:
+    # Define dictionary:
     stocks = {
         'GOOG': 434,
         'AAPL': 325,
@@ -14,11 +14,22 @@ def main():
         'MSFT': 549
     }
 
+    min_value = get_min_value(stocks)
 
-    # Get minimum stock by value:
-    min_price = min(zip(stocks.values(), stocks.keys()))
+    print(min_value)
 
-    # Display minimum stock:
-    print(min_price)
 
+def get_min_value(stocks):
+
+    # # Get minimum value by key:
+    # min_value = min(zip(stocks.keys(), stocks.values()))
+
+    # Get minimum value by value:
+    min_value = min(zip(stocks.values(), stocks.keys()))
+
+    # Return minimum value:
+    return min_value
+
+
+# Call main:
 main()
