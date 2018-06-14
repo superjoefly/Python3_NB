@@ -1,5 +1,5 @@
-# My Module
-"""This module contains greetings for the main program"""
+# Greetings Module
+"""Contains functions that display greetings"""
 
 
 def say_hello():

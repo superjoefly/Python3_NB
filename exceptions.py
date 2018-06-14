@@ -1,18 +1,26 @@
 """Examples of Exceptions and Error Handling"""
 
-# Define main:
-def main():
-    """Get number from user and validate"""
 
-    # Get a number from the user:
+# Description: The following program uses exceptions and error
+# handling to validate user input for an integer:
+
+
+# Validates user input as an integer:
+def main():
+    """The main function"""
+
+    # Get a valid number from the user:
     number = validate_number()
 
+    # Display message that number is valid:
     print("The number", number, "is valid!")
 
 
+# Validates and returns an integer:
 def validate_number():
     """Validate number"""
 
+    # Loop to validate number:
     while True:
         try:
             # Convert value to integer:

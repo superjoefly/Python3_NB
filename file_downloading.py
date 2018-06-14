@@ -1,5 +1,6 @@
 """File Downloading Program"""
 
+
 # The following program will download and verify
 # a file from the user specified url:
 
@@ -8,8 +9,8 @@
 from urllib import request
 
 
-# The main function gets a url from the user,
-# and downloads the data from the url:
+# Gets a url from the user and
+# downloads the data from the url:
 def main():
     """The main function"""
 

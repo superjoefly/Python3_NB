@@ -1,6 +1,12 @@
-"""Binary Operator Examples"""
+"""Binary Operators Example"""
 
-# Define main:
+
+# Description: The following program uses the AND,
+# LEFT SHIFT and RIGHT SHIFT Binary Operators.
+
+
+# Assigns integers to variables and performs
+# binary AND, LEFT SHIFT and RIGHT SHIFT operations:
 def main():
     """The main function"""
 
@@ -15,22 +21,20 @@ def main():
 
     ##############################
 
-    # Binary AND Operator
+    # Binary AND Operator:
     a = 50      # 110010
     b = 25      # 011001
     c = a & b   # 010000
     print(c)    # 16
 
 
-
-    # Binary RIGHT SHIFT Operator (shift two places to right)
+    # Binary RIGHT SHIFT Operator (shift two places to right):
     x = 240     # 11110000
     y = x >> 2  # 00111100
     print(y)    # 60
 
 
-
-    # Binary LEFT SHIFT Operator (shift two places to left)
+    # Binary LEFT SHIFT Operator (shift two places to left):
     x = 240     # 11110000
     y = x << 2  # 1111000000
     print(y)    # 960
