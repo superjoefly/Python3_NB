@@ -40,5 +40,6 @@ def main():
     # Display sorted values:
     print(sorted(wages))
 
+
 # Call main:
 main()
