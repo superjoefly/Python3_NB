@@ -1,9 +1,11 @@
 """Word Count Program"""
 
+
 # Import Modules:
 import operator
 import requests
 from bs4 import BeautifulSoup
+
 
 # Constants:
 HEADING = ['WORD', 'COUNT']
@@ -61,6 +63,7 @@ def crawl(url):
     return words
 
 
+
 # Cleans the word list removing unwanted characters:
 def clean_words_list(word_list):
     """Clean words of unwanted characters"""
@@ -71,10 +74,11 @@ def clean_words_list(word_list):
         for i in list(word):
             if i not in list(accepted):
                 word = word.replace(i, '')
-        if len(word) > 0:
+        if word:
             clean_words.append(word)
 
     return clean_words
+
 
 
 # Creates a sorted dictionary and returns a sorted list:
@@ -97,6 +101,7 @@ def create_dictionary(clean_words):
     return sorted_dict
 
 
+
 # Displays a table of words with word counts:
 def display_table(sorted_list):
     """Display table"""
@@ -109,6 +114,7 @@ def display_table(sorted_list):
     # Display Formatted Items:
     for item in sorted_list:
         print(DISPLAY.format(item[0], str(item[1])))
+
 
 
 # Displays a word count search query:
