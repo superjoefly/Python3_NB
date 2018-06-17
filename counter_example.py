@@ -1,9 +1,16 @@
 """Word Frequency Counter"""
 
+
+# Description: The following program takes a sentence from the user
+# and determines the word frequency using the Counter module:
+
+
 # Import Modules:
 from collections import Counter
 
-# Define main:
+
+# Gets a sentence and a level from the user to determine
+# the frequency of word occurence:
 def main():
     """The main function"""
 
@@ -27,7 +34,8 @@ def main():
     print(frequent_words)
 
 
-# Define word_count:
+# Takes a sentence and a level and returns the frequency
+# of words depending on the level:
 def word_frequency(sentence, level):
     """Count word frequency"""
 

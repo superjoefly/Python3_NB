@@ -1,10 +1,16 @@
 """Calculation using Dictionary Values"""
 
-# Define main:
+
+# Description: The following program uses the zip and min
+# functions to determine the minimum value in a dictionary:
+
+
+# Assigns a dictionary and determines the minimum value
+# in the dictionary:
 def main():
     """The main function"""
 
-    # Define dictionary:
+    # Assign dictionary:
     stocks = {
         'GOOG': 434,
         'AAPL': 325,
@@ -14,11 +20,15 @@ def main():
         'MSFT': 549
     }
 
+    # Get the minimum value:
     min_value = get_min_value(stocks)
 
+    # Display the minimum value:
     print(min_value)
 
 
+# Takes the stocks dictionary and returns
+# the minimum value:
 def get_min_value(stocks):
 
     # # Get minimum value by key:

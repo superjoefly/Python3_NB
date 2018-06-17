@@ -1,13 +1,17 @@
 """Example of Min, Max and Sorting for Dictionaries"""
 
-# The main function defines a dictionary and uses the zip function
-# to convert to a list of tupples. Then we use the min, max and
-# sorted functions to display min, max and sorted values.
 
-# Define main:
+# Description: The following program determines the min,
+# max and sorted values of a dictionary:
+
+
+# Assigns a dictionary and uses the zip function
+# to convert to a list of tupples. Then uses the min, max and
+# sorted functions to display min, max and sorted values.
 def main():
     """The main function"""
 
+    # Assign dictionary:
     emp_wages = {
         'John': 50.00,
         'Brian': 75.00,
