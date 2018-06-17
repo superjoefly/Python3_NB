@@ -6,6 +6,7 @@ from struct import *
 # Define main:
 def main():
     """The main function"""
+
     # Store as bytes data (int, int, float):
     packed_data = pack('iif', 5, 4, 3.33)
 

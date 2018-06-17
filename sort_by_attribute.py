@@ -4,13 +4,14 @@
 # Import Modules:
 from operator import attrgetter
 
+
 # Define main:
 def main():
     """The main function"""
 
     # Create the User class:
     class User:
-        """User Class"""
+        """User Class with two methods"""
 
         # Initialize objects with name and user_id:
         def __init__(self, name, user_id):
@@ -45,6 +46,7 @@ def main():
     # Display list of users sorted by user_id:
     for user in sorted(users, key=attrgetter('user_id')):
         print(user)
+
 
 # Call main:
 main()
