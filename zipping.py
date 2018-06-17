@@ -1,8 +1,10 @@
 """Zip list example"""
 
+
 # The main function:
 def main():
     """The main function"""
+
     first_names = ['John', 'Chris', 'Kyle']
     last_names = ['Goodman', 'Rock', 'Evans']
 
@@ -19,6 +21,7 @@ def main():
 
     for a, b in full_names:
         print(a, b)
+
 
 # Call main:
 main()
