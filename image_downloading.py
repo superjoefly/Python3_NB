@@ -8,9 +8,10 @@ from urllib import request
 from PIL import Image
 
 
-# The main function get's a URL from the user
-# and downloads an image:
+# Gets url from user and downloads an image:
 def main():
+    """The main function"""
+
     # Get image url from user:
     image_url = input("Enter the url for the image to download: ")
 
@@ -20,6 +21,7 @@ def main():
 
 # Downloads and verifies the image download:
 def download_image(url):
+    """Download and verify image"""
 
     # Define name for image:
     image_name = 'my_image.jpg'

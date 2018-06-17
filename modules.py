@@ -2,8 +2,10 @@
 # implement a module into a program:
 """Import Module Example"""
 
+
 # Modules:
 import greetings
+
 
 # Define main:
 def main():
@@ -16,6 +18,7 @@ def main():
 
     # Call say_goodbye function of greetings module:
     greetings.say_goodbye()
+
 
 # Call main
 main()

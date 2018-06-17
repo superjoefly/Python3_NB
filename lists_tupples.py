@@ -12,10 +12,10 @@ def main():
 
     print("------------")
 
+
     # Unpacking list:
     date, name, price = ["December 23, 2015", "Toy Car", 12.50]
     print(date, name, price)
-
 
     print("------------")
 

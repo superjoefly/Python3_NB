@@ -1,5 +1,6 @@
 """Example of using map function"""
 
+
 # Define the main function:
 def main():
     """Double's values of income list:"""
@@ -9,18 +10,19 @@ def main():
 
     # Use the map function to double each value in
     # the income list; convert to list:
-    doubled_income = list(map(double_income, income))
+    income_doubled = list(map(double_income, income))
 
     # Display doubled values:
-    print(doubled_income)
+    print(income_doubled)
 
 
-# Define doubel_income function:
+# Returns a doubled value:
 def double_income(dollars):
     """Doubles a value"""
 
     # Return value doubled:
     return dollars * 2
+
 
 # Call main:
 main()
