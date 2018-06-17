@@ -22,7 +22,9 @@ def main():
     get_cheapest_stocks()
 
 
+
 def get_highest_grades():
+    """Gets highest grades in list of grades"""
 
     print("Determine the highest", LEVEL, \
     "grades in a list of grades.")
@@ -52,12 +54,13 @@ def get_highest_grades():
     print("--------------------------")
 
 
+
 # Validates user input for grades:
 def validate_grade():
     """Validates user input for grades"""
 
     # Checks if number is from 0 to 100:
-    isValidScore = lambda n: 0 <= n <= 100
+    is_valid_score = lambda n: 0 <= n <= 100
 
     # Get user input for grade:
     grade = input("Enter a grade or 'exit' to see result: ")
@@ -68,7 +71,7 @@ def validate_grade():
             # Check if input is a number:
             grade = float(grade)
             # Check if number is from 0 to 100:
-            if isValidScore(grade):
+            if is_valid_score(grade):
                 # If it's a valid number, return it:
                 return grade
             # If it's not a valid number:
@@ -103,6 +106,7 @@ def get_cheapest_stocks():
 
     # Display 2 cheapest stocks:
     print(two_cheapest_stocks)
+
 
 
 # Call main:
