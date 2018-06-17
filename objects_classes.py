@@ -1,3 +1,5 @@
+"""Object and Class Examples"""
+
 #####################
 # Objects and Classes
 #####################
@@ -5,25 +7,31 @@
 
 def main():
     """Example of Class and Object Creation"""
+
     # Class creation:
     class Enemy:
-        """This is the enemy class"""
+        """The Enemy class has one property and two methods"""
+
+        # Class property:
         life = 3
 
+        # Class methods:
         def attack(self):
             """This is the attack method of the enemy class"""
-            self.life -= 1
+
             print("OUCH!!!")
+            self.life -= 1
 
         def check_life(self):
             """This is the check_life method of the enemy class"""
+
             if self.life <= 0:
                 print("Enemy Dead!")
             else:
                 print(self.life, 'life left!')
 
 
-    # Creat two objects of the Enemy class:
+    # Creat two Enemy objects:
     enemy1 = Enemy()
     enemy2 = Enemy()
 
@@ -56,12 +64,14 @@ def main():
     # Create Animal Class:
     class Animal:
         """This the the Animal Class"""
+
         def __init__(self, name, type_of):
             self.name = name
             self.type_of = type_of
 
         def say_hello(self, hello):
             """Say Hello Method of Animal Class"""
+
             print(hello)
 
 
@@ -95,6 +105,7 @@ def main():
         # Default methods of class:
         def make_noise(self):
             """Make Noise Method of Beast Class"""
+
             print(self.noise)
 
         # Instantiation of class (instance variables)
@@ -144,21 +155,26 @@ def main():
 
         def display_first_name(self):
             """Display First Name method of Parent Class"""
+
             print(self.first_name)
 
         def display_last_name(self):
             """Display Last Name method of Parent Class"""
+
             print(self.last_name)
 
     class Child(Parent):
         """Child Class"""
+
         def say_hello(self):
             """Say Hello Method of Child Class"""
+
             print("Hello There!")
 
         # Override last_name method of parent class:
         def display_last_name(self):
             """Display Last Name method of Child Class"""
+
             print("Whatever!!!")
 
 
@@ -183,25 +199,30 @@ def main():
 
     class Mario():
         """Mario Class"""
+
         def __init__(self, life):
             self.life = life
 
         def move(self):
             """Move Method"""
+
             print("Mario moves around...")
 
         def gains_life(self):
             """Gains Life Method"""
+
             self.life += 3
 
     class Shroom():
         """Shroom Class"""
+
         def eat_shroom(self):
             """Eat Mushroom Method"""
             print("Mario get's bigger!")
 
     class FastMario():
         """Fast Mario Class"""
+
         def super_speed(self):
             """Super Speed Method"""
             print("Mario runs at super speed!!!")
@@ -209,6 +230,7 @@ def main():
     # Inherits from multiple classes:
     class SuperMario(Mario, Shroom, FastMario):
         """Super Mario Class"""
+
         pass
 
     # Creat object:
@@ -223,4 +245,5 @@ def main():
     mario1.super_speed()
 
 
+# Call main:
 main()
