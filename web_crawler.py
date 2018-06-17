@@ -7,10 +7,11 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
 
-# The main function gets a URL
-# from the user and crawls the url:
+# Get and crawl url:
 def main():
-    # Get URL from user::
+    """The main function"""
+
+    # Get URL from user:
     url = input("Enter a URL for the crawl: ")
 
     # Get BeautifulSoup Object:
@@ -21,6 +22,8 @@ def main():
 
 
 def get_soup(url):
+    """Creates and returns BeautifulSoup object"""
+
     # Get the source code:
     source_code = requests.get(url)
 
@@ -34,6 +37,8 @@ def get_soup(url):
 
 
 def crawl_url(url, soup):
+    """Crawls the url; displays anchor links and inner text"""
+
     # For each anchor tag:
     for item in soup.findAll('a'):
 
